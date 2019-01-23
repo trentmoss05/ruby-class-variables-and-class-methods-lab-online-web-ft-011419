@@ -42,7 +42,11 @@ class Song
 
     hash = {}
     @@artists.each do |artist|
-      hash[artist] += 1
+      if hash[artist]
+        hash[artist] += 1
+      else
+        hash[artist] = 1
+      end
     end
   end
 
