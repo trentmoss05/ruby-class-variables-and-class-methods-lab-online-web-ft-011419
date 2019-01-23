@@ -41,14 +41,8 @@ class Song
     #end
     require 'pry'
     hash = Hash.new(0)
-    plain_hash = {}
-    binding.pry
     @@artists.each do |artist|
-      if hash[artist]
-        hash[artist] += 1
-      else
-        hash[artist] = 1
-      end
+      hash[artist] += 1
     end
     hash
   end
