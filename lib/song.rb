@@ -40,7 +40,7 @@ class Song
     #  hash
     #end
 
-    hash = {}
+    hash = Hash.new(0)
     @@artists.each do |artist|
       if hash[artist]
         hash[artist] += 1
